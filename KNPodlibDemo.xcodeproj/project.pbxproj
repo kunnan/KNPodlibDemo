@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B84AA907BD2D9324E8268B /* libPods-KNPodlibDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */; };
 		E109478D2092EB1300A1E659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E109478C2092EB1300A1E659 /* AppDelegate.m */; };
 		E10947902092EB1400A1E659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E109478F2092EB1400A1E659 /* ViewController.m */; };
 		E10947932092EB1400A1E659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10947912092EB1400A1E659 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNPodlibDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10947882092EB1300A1E659 /* KNPodlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNPodlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E109478B2092EB1300A1E659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E109478C2092EB1300A1E659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		E10947972092EB1400A1E659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E10947992092EB1400A1E659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E109479A2092EB1400A1E659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E95D561A202D9CE87DE078E8 /* Pods-KNPodlibDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNPodlibDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FF206C255DEC9B294C6B99D7 /* Pods-KNPodlibDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNPodlibDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B84AA907BD2D9324E8268B /* libPods-KNPodlibDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		957D434D14AB2A257C3ABBA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99E2BEA21C39FB2D0C6502A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E95D561A202D9CE87DE078E8 /* Pods-KNPodlibDemo.debug.xcconfig */,
+				FF206C255DEC9B294C6B99D7 /* Pods-KNPodlibDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E109477F2092EB1300A1E659 = {
 			isa = PBXGroup;
 			children = (
 				E109478A2092EB1300A1E659 /* KNPodlibDemo */,
 				E10947892092EB1300A1E659 /* Products */,
+				99E2BEA21C39FB2D0C6502A7 /* Pods */,
+				957D434D14AB2A257C3ABBA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E109479E2092EB1400A1E659 /* Build configuration list for PBXNativeTarget "KNPodlibDemo" */;
 			buildPhases = (
+				D82B24F3CF3267E132D117C2 /* [CP] Check Pods Manifest.lock */,
 				E10947842092EB1300A1E659 /* Sources */,
 				E10947852092EB1300A1E659 /* Frameworks */,
 				E10947862092EB1300A1E659 /* Resources */,
+				5DAA68394ACE9E5B634527C4 /* [CP] Embed Pods Frameworks */,
+				5097E23131A6D284A2EC0A4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5097E23131A6D284A2EC0A4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/KNPodlib/KNPodlib.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KNPodlib.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DAA68394ACE9E5B634527C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D82B24F3CF3267E132D117C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KNPodlibDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E10947842092EB1300A1E659 /* Sources */ = {
@@ -276,6 +357,7 @@
 		};
 		E109479F2092EB1400A1E659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95D561A202D9CE87DE078E8 /* Pods-KNPodlibDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +372,7 @@
 		};
 		E10947A02092EB1400A1E659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF206C255DEC9B294C6B99D7 /* Pods-KNPodlibDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
