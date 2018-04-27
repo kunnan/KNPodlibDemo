@@ -13,3 +13,10 @@ Sending stats
 Pod installation complete! There is 1 dependency from the Podfile and 1 total pod installed.
 [!] Automatically assigning platform `ios` with version `11.1` on target `KNPodlibDemo` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
 ```
+
+
+>* info.plist 添加 NSPhotoLibraryUsageDescription key
+
+```
+NSPhotoLibraryUsageDescription
+```

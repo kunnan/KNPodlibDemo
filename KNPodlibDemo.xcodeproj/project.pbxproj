@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B84AA907BD2D9324E8268B /* libPods-KNPodlibDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */; };
 		E109478D2092EB1300A1E659 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E109478C2092EB1300A1E659 /* AppDelegate.m */; };
 		E10947902092EB1400A1E659 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E109478F2092EB1400A1E659 /* ViewController.m */; };
 		E10947932092EB1400A1E659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10947912092EB1400A1E659 /* Main.storyboard */; };
 		E10947952092EB1400A1E659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10947942092EB1400A1E659 /* Assets.xcassets */; };
 		E10947982092EB1400A1E659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10947962092EB1400A1E659 /* LaunchScreen.storyboard */; };
 		E109479B2092EB1400A1E659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E109479A2092EB1400A1E659 /* main.m */; };
+		E9986E46DBBC3880AFA745FA /* Pods_KNPodlibDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544ABE23946CC43F4F79E6D9 /* Pods_KNPodlibDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KNPodlibDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		544ABE23946CC43F4F79E6D9 /* Pods_KNPodlibDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNPodlibDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10947882092EB1300A1E659 /* KNPodlibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNPodlibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E109478B2092EB1300A1E659 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E109478C2092EB1300A1E659 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B84AA907BD2D9324E8268B /* libPods-KNPodlibDemo.a in Frameworks */,
+				E9986E46DBBC3880AFA745FA /* Pods_KNPodlibDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		957D434D14AB2A257C3ABBA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34AEAD26E55432CB2D496B4A /* libPods-KNPodlibDemo.a */,
+				544ABE23946CC43F4F79E6D9 /* Pods_KNPodlibDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,9 +189,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KNPodlib/KNPodlib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KNPodlib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
