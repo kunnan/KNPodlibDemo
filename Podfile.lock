@@ -1,5 +1,5 @@
 PODS:
-  - KNPodlib (0.1.10)
+  - KNPodlib (0.1.11)
 
 DEPENDENCIES:
   - KNPodlib
@@ -9,7 +9,7 @@ SPEC REPOS:
     - KNPodlib
 
 SPEC CHECKSUMS:
-  KNPodlib: 1d42178896ba458a3ffa62cd9b29720f02a7654c
+  KNPodlib: dca04fa269185b427bb250983cffe7092d37471a
 
 PODFILE CHECKSUM: 971b09f404ae6ec991205289e2e6a4f13fb1efb7
 
