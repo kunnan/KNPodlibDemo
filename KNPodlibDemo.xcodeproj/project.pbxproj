@@ -107,7 +107,6 @@
 				E10947852092EB1300A1E659 /* Frameworks */,
 				E10947862092EB1300A1E659 /* Resources */,
 				5DAA68394ACE9E5B634527C4 /* [CP] Embed Pods Frameworks */,
-				5097E23131A6D284A2EC0A4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,24 +164,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5097E23131A6D284A2EC0A4F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/KNPodlib/KNPodlib.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KNPodlib.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNPodlibDemo/Pods-KNPodlibDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5DAA68394ACE9E5B634527C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

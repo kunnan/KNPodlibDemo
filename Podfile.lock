@@ -1,12 +1,16 @@
 PODS:
-  - KNPodlib (0.1.3)
+  - KNPodlib (0.1.10)
 
 DEPENDENCIES:
   - KNPodlib
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - KNPodlib
+
 SPEC CHECKSUMS:
-  KNPodlib: 032803bd43339eb01592f6d264f08a939511abf0
+  KNPodlib: 1d42178896ba458a3ffa62cd9b29720f02a7654c
 
 PODFILE CHECKSUM: 971b09f404ae6ec991205289e2e6a4f13fb1efb7
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
